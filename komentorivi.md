@@ -88,7 +88,7 @@ grep etsii tiedostosta Esimerkki.txt kaikki rivit, joissa esiintyy sana "koira".
 ## Pipe
 ![Install2](pipe1.png)
 
-Yhdistyminen komentoja putkilla: Listataan hakemiston sisältö, ja vain rivit, joissa on sana "log", näytetään käyttäen grep.
+Yhdistyminen komentoja putkilla: Listataan hakemiston sisältö, ja vain rivit, joissa on sana "Esimerkki", näytetään käyttäen grep.
 
 ![Install2](pipe2.png)
 
@@ -97,3 +97,15 @@ Monivaiheinen käsittely: Etsi kaikki juurihakemiston tiedostot ja näytä niide
 ## Rauta
 
 Asennetaan lshw toiminnon. 
+
+![Install2](rauta1.png)
+
+Listan koneen rautatiedot lyhyesti sudo lshw -short -sanitize komennolla.
+
+![Install2](rauta2.png)
+
+Tuloste kertoo, että käyttöjärjestelmä toimii VirtualBox-virtuaalikoneessa. Sille on määritetty 2 GB RAM-muistia, ja laitteistokomponentit (esim. verkkosovitin, CD-ROM ja äänikortti) ovat pääosin VirtualBoxin emuloimia. Tämä ympäristö on suunniteltu tarjoamaan isäntäkoneen ominaisuuksia virtuaalikoneelle optimoidulla suorituskyvyllä ja joustavuudella.
+
+## Lähteet
+
+Karvinen 2020: https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited#important-directories
