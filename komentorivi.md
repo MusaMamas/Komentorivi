@@ -28,3 +28,7 @@ Suoritin komennon sudo apt-get install micro tarkoituksena asentaa "micro"-ohjel
 Suoritin komennon micro --version tarkistaakseni "micro"-ohjelman version. Tuloste osoittaa, että asennettu versio on 2.0.11.
 
 ## Kolme uutta komentoriviohjelmaa
+
+
+
+Suoritin komennon sudo apt-get install -y htop cowsay tree asentaakseni kolme ohjelmaa: htop, cowsay ja tree. Koska käytin -y-valitsinta, järjestelmä hyväksyi asennuksen automaattisesti ilman lisävahvistusta. Tuloste osoittaa, että kaikki kolme ohjelmaa on lisätty onnistuneesti
