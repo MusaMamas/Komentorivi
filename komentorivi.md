@@ -69,13 +69,31 @@ Kaikki nämä toimet auttoivat tutkimaan järjestelmän tiedostorakennetta ja ta
 
 ## Friendly M
 
+![Install2](grep1.png)
+
 Suoritin komennon grep "ma" /home/musakhan yrittäen etsiä tekstiriviä, joka sisältää merkkijonon "ma" käyttäjän kotihakemistosta. Komento kuitenkin palautti viestin "grep: /home/musakhan: On hakemisto", koska annettu polku ei ollut tiedosto, vaan hakemisto.
 
 Jotta voisin käyttää grep-komentoa hakemistossa, minun pitäisi lisätä esimerkiksi -r-vaihtoehto rekursiiviseen hakuun, kuten:
 
+![Install2](grep2.png)
 
 Seuraava komento tekee tätä:
+
+![Install2](grep3.png)
 
 grep etsii tiedostosta Esimerkki.txt kaikki rivit, joissa esiintyy sana "koira".
 --color=always korostaa etsityn tekstin värillä (tässä tapauksessa "koira").
 -n näyttää rivinumeron, josta löytynyt merkkijono sijaitsee.
+
+## Pipe
+![Install2](pipe1.png)
+
+Yhdistyminen komentoja putkilla: Listataan hakemiston sisältö, ja vain rivit, joissa on sana "log", näytetään käyttäen grep.
+
+![Install2](pipe2.png)
+
+Monivaiheinen käsittely: Etsi kaikki juurihakemiston tiedostot ja näytä niiden määrä.
+
+## Rauta
+
+Asennetaan lshw toiminnon. 
