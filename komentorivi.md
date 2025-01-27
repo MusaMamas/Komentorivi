@@ -46,3 +46,36 @@ Käytin komentoa cowsay "Moikka kaikille" luodakseni hauskan ASCII-kuvan, jossa 
 Suoritin komennon tree, joka näyttää hakemistorakenteen hierarkkisesti tekstimuodossa. Tulosteessa näkyy käyttäjän kotikansion alihakemistot, kuten Asiakirjat, Julkinen, Kuvat, ja Videot. Komento auttaa nopeasti hahmottamaan hakemistorakenteen yhdellä vilkaisulla.
 
 ## FHS
+![Install2](fhs1.png)
+![Install2](fhs2.png)
+![Install2](fhs3.png)
+![Install2](fhs4.png)
+
+**ls /**: Listasin järjestelmän juurihakemiston sisällön, jossa näkyvät tärkeät hakemistot, kuten bin, home, etc, var ja monet muut järjestelmähakemistot.
+
+**ls /home**: Tarkistin /home-hakemiston sisällön, jossa näkyy käyttäjähakemisto nimeltä musakhan.
+
+**ls /home/musakhan**: Listasin käyttäjän kotihakemiston sisällön, johon kuuluu hakemistoja, kuten Asiakirjat, Kuvat, Työpöytä, viikonpaivat, jne.
+
+**ls /etc/apache2**: Tarkistin Apache2:n asetushakemiston sisällön, jossa näkyy conf-available-hakemisto.
+
+**ls /etc/geoclue**: Tarkistin geoclue-asetushakemiston, jossa oli tiedosto geoclue.conf.
+
+**ls /media**: Listasin /media-hakemiston, joka oli tyhjä.
+
+**ls /var/log**: Listasin /var/log-hakemiston sisällön, joka sisältää lokitiedostoja ja kansioita, kuten apt, dpkg.log, boot.log, sekä lokit eri palveluista, kuten lightdm ja speech-dispatcher.
+
+Kaikki nämä toimet auttoivat tutkimaan järjestelmän tiedostorakennetta ja tarkastelemaan eri hakemistojen sisältöä järjestelmän eri osista.
+
+## Friendly M
+
+Suoritin komennon grep "ma" /home/musakhan yrittäen etsiä tekstiriviä, joka sisältää merkkijonon "ma" käyttäjän kotihakemistosta. Komento kuitenkin palautti viestin "grep: /home/musakhan: On hakemisto", koska annettu polku ei ollut tiedosto, vaan hakemisto.
+
+Jotta voisin käyttää grep-komentoa hakemistossa, minun pitäisi lisätä esimerkiksi -r-vaihtoehto rekursiiviseen hakuun, kuten:
+
+
+Seuraava komento tekee tätä:
+
+grep etsii tiedostosta Esimerkki.txt kaikki rivit, joissa esiintyy sana "koira".
+--color=always korostaa etsityn tekstin värillä (tässä tapauksessa "koira").
+-n näyttää rivinumeron, josta löytynyt merkkijono sijaitsee.
