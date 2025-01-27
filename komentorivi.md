@@ -25,10 +25,24 @@ Suoritin komennon sudo apt-get install micro tarkoituksena asentaa "micro"-ohjel
 
 ![Check](micro3.png)
 
-Suoritin komennon micro --version tarkistaakseni "micro"-ohjelman version. Tuloste osoittaa, että asennettu versio on 2.0.11.
+Suoritin komennon micro --version tarkistaakseni "micro"-ohjelman version. Asennettu versio on 2.0.11.
 
 ## Kolme uutta komentoriviohjelmaa
 
+![Install1](kolme1.png)
 
+Suoritin komennon sudo apt-get install -y htop cowsay tree asentaakseni kolme ohjelmaa: htop, cowsay ja tree. Koska käytin -y-valitsinta, järjestelmä hyväksyi asennuksen automaattisesti ilman lisävahvistusta. Kaikki kolme ohjelmaa on lisätty onnistuneesti.
 
-Suoritin komennon sudo apt-get install -y htop cowsay tree asentaakseni kolme ohjelmaa: htop, cowsay ja tree. Koska käytin -y-valitsinta, järjestelmä hyväksyi asennuksen automaattisesti ilman lisävahvistusta. Tuloste osoittaa, että kaikki kolme ohjelmaa on lisätty onnistuneesti
+![Install2](kolme2.png)
+
+Avasin htop-ohjelman tarkistaakseni järjestelmän resurssien käyttöä reaaliaikaisesti, mukaan lukien suorittimen, muistin ja eri prosessien tiedot. Käytin ohjelman tarjoamia toimintoja ja lopetin ohjelman painamalla F10 tai q, mikä sulki ohjelman ja palasi takaisin komentoriville.
+
+![Install2](kolme3.png)
+
+Käytin komentoa cowsay "Moikka kaikille" luodakseni hauskan ASCII-kuvan, jossa lehmä "puhuu" annetun viestin "Moikka kaikille". Tulosteessa lehmä hahmottuu tekstigrafiikkana ja sen yläpuolella näkyy viesti puhekuplassa. 
+
+![Install2](kolme4.png)
+
+Suoritin komennon tree, joka näyttää hakemistorakenteen hierarkkisesti tekstimuodossa. Tulosteessa näkyy käyttäjän kotikansion alihakemistot, kuten Asiakirjat, Julkinen, Kuvat, ja Videot. Komento auttaa nopeasti hahmottamaan hakemistorakenteen yhdellä vilkaisulla.
+
+## FHS
